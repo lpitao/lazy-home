@@ -1,9 +1,14 @@
-name: Deploy to Production
+#字段是 workflow 的名称。如果省略该字段，默认为当前 workflow 的文件名
+name: Lazy to Production
 
+#on字段指定触发 workflow 的条件，通常是某些事件。
 on:
   push:
     branches:
       - master
+
+#jobs字段里面，需要写出每一项任务的job_id，具体名称自定义。job_id里面的name字段是任务的说明。
+#runs-on字段指定运行所需要的虚拟机环境。它是必填字段。目前可用的虚拟机如下。
 
 jobs:
   deploy:
