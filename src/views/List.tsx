@@ -1,8 +1,11 @@
 import '../assets/sport.css'
+import LottieComponent from '../components/LottieComponent';
 
 function List() {
+    
     return (
         <>
+            <LottieComponent  />
             <div className="room">
                 <div className="person person-walk">
                     <div className="head"></div>
